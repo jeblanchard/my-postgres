@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  my-postgres:
+    build: .
+    environment:
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    image: "jeblanchard/personal-website:my-postgres"

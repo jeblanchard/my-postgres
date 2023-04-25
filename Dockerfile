@@ -1,4 +1,3 @@
 FROM postgres:latest
 
-COPY ./data/ ./docker-entrypoint-initdb.d/
-
+COPY ./docker-init/* ./docker-entrypoint-initdb.d/
